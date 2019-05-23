@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Multi images ajax uploader</title>
+  </head>
+  <body>
+    <form class="js-form">
+      <label class="label" for="image_uploads">Upload images</label>
+      <input class="file-input js-image-input" type="file" id="image_uploads" name="files[]" accept=".jpg, .jpeg, .png"
+        multiple>
+      <div class="flexygrid js-image-preview">
+        <div class="flexygrid__item one-sixth">
+          <label for="image_uploads" class="add-image"></label>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
